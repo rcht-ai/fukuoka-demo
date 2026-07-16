@@ -142,7 +142,7 @@ body {
 .event-expand::after { content: '→'; font-size: 1rem; transition: transform 0.2s; }
 .event:hover .event-expand::after { transform: translateX(4px); color: var(--red); }
 .event.booked .event-card { background: #fff9e8; border: 2px solid var(--red); }
-.event.booked .event-card::before { content: '預訂 · BOOKED'; position: absolute; top: 0.75rem; right: 0.75rem; background: var(--red); color: var(--paper); font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; padding: 0.15rem 0.5rem; letter-spacing: 0.12em; z-index: 1; }
+.event.booked .event-card::before { content: 'BOOKED'; position: absolute; top: 0.75rem; right: 0.75rem; background: var(--red); color: var(--paper); font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; padding: 0.15rem 0.5rem; letter-spacing: 0.12em; z-index: 1; }
 .event-who-tag { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.18rem 0.5rem; background: rgba(45, 106, 106, 0.1); border: 1px solid var(--teal); font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal-deep); margin-left: 0.5rem; }
 .event-who-tag.tag-yours { background: rgba(194, 54, 22, 0.08); border-color: var(--red); color: var(--red-deep); }
 
@@ -400,7 +400,7 @@ body {
 <header class="header">
   <div class="header-top">
     <div class="meta-left">
-      <div>Demo Edition · 示範行程</div>
+      <div>Demo Edition · Sample Data</div>
       <div>Kyushu / 九州地方</div>
     </div>
     <div class="meta-right">
@@ -459,7 +459,7 @@ body {
     <div class="day-heading">
       <div class="day-weather" data-zh="🌦️ 稍後多雲 · 偶有零星陣雨 · 約30°/24° · 悶熱">🌦️ Turning cloudy · isolated showers · ~30°/24° · humid</div>
       <h2 data-zh="香港早上出發（私家車）· XX123 12:35 → 17:00 福岡 · 入住 · どげん海歡迎晚餐">HK morning departure (private car) · XX123 12:35 → Fukuoka 17:00 · check-in · Dogenkai welcome dinner.</h2>
-      <p class="day-subtitle" data-zh="09:00 開車出門 — 全家同搭 <strong>Sample Air XX123</strong>（香港 12:35 → 福岡 17:00，約11:55登機）。地下鐵10分鐘進博多站。入住 <strong>Sample Hotel 博多</strong>。19:00 歡迎晚餐：<strong>博多居酒屋 どげん海</strong> — 已預訂，活魷魚生魚片＋糸島海鮮＋炭火燒，包廂。">Leave home 09:00 by car — the family flies <strong>Sample Air XX123</strong> (HKG 12:35 → Fukuoka 17:00, boarding ~11:55). 10-min subway into Hakata Stn (博多站). Check in at <strong>Sample Hotel Hakata</strong>. Welcome dinner 19:00: <strong>Hakata Izakaya Dogenkai (どげん海)</strong> — booked, live-squid sashimi + Itoshima seafood + charcoal, private room.</p>
+      <p class="day-subtitle" data-zh="09:00 開車出門 — 全家同搭 <strong>Sample Air XX123</strong>（香港 12:35 → 福岡 17:00，約11:55登機）。地下鐵10分鐘進博多站。入住 <strong>Sample Hotel 博多</strong>。19:00 歡迎晚餐：<strong>博多居酒屋 どげん海</strong> — 已預訂，活魷魚生魚片＋糸島海鮮＋炭火燒，包廂。">Leave home 09:00 by car — the family flies <strong>Sample Air XX123</strong> (HKG 12:35 → Fukuoka 17:00, boarding ~11:55). 10-min subway into Hakata Stn (博多駅). Check in at <strong>Sample Hotel Hakata</strong>. Welcome dinner 19:00: <strong>Hakata Izakaya Dogenkai (どげん海)</strong> — booked, live-squid sashimi + Itoshima seafood + charcoal, private room.</p>
       <span class="day-who" data-zh="全家同行 · 歡迎">Family · welcome</span>
     </div>
   </div>
@@ -542,7 +542,7 @@ body {
 
 <section class="phrase-card">
   <details>
-    <summary>🗣️ Phrase Cheat Sheet · 日本語フレーズ · 日語短句</summary>
+    <summary>🗣️ Phrase Cheat Sheet · 日本語フレーズ</summary>
     <table class="phrase-table" id="phrase-table">
       <!-- populated by JS -->
     </table>
@@ -555,11 +555,11 @@ body {
 
 <section class="preamble">
   <details class="card-block" open>
-    <summary>🎫 Bookings · 予約 · 訂位</summary>
+    <summary>🎫 Bookings · 予約</summary>
     <div class="card-body">
       <div class="row"><span class="key">Stay · Jul 3–8</span><span class="val"><strong>Sample Hotel Hakata ✓</strong><br><small style="color:var(--muted)">BOOKED · family room · DEMO-9999</small></span></div>
-      <div class="row"><span class="key">Day 1 · 19:00</span><span class="val"><strong>博多居酒屋 どげん海 ✓</strong><br><small style="color:var(--muted)">BOOKED · 團體席 · Resty DEMO-1234</small></span></div>
-      <div class="row"><span class="key">Day 2 · 19:30</span><span class="val"><strong>ワンカルビ PREMIUM 天神今泉 ✓</strong><br><small style="color:var(--muted)">BOOKED · 2卓 · Resty #DEMO-5678 / #DEMO-6789</small></span></div>
+      <div class="row"><span class="key">Day 1 · 19:00</span><span class="val"><strong>博多居酒屋 どげん海 ✓</strong><br><small style="color:var(--muted)">BOOKED · private room · Resty DEMO-1234</small></span></div>
+      <div class="row"><span class="key">Day 2 · 19:30</span><span class="val"><strong>ワンカルビ PREMIUM 天神今泉 ✓</strong><br><small style="color:var(--muted)">BOOKED · 1 table · Resty #DEMO-5678</small></span></div>
       <div class="row"><span class="key">Day 3 · 16:00</span><span class="val"><strong>西川 ねむりの相談所 オーダー枕 ✓</strong><br><small style="color:var(--muted)">BOOKED · 博多阪急7F · 16:00×2 + 17:00×2</small></span></div>
       <div class="row"><span class="key">Day 4 · 09:17</span><span class="val"><strong>ゆふいんの森 1 + 6 ✓</strong> (family)<br><small style="color:var(--muted)">BOOKED · out #DEMO-1111 · return #DEMO-3333</small></span></div>
       <div class="row"><span class="key">Day 5 · 19:00</span><span class="val"><strong>博多オスシマチ ✓</strong><br><small style="color:var(--muted)">BOOKED · JRJP博多ビル2F · 寿司 · ebisol</small></span></div>
@@ -578,7 +578,7 @@ body {
         <div class="late-card"><img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Calbee Plus" onerror="this.style.display='none'"><div class="lc-body"><div class="lc-name">Calbee Plus</div><div class="lc-desc" data-zh="現炸 Calbee 薯點心 · 在博多阪急內（第5天買伴手禮時順手買）">Fresh-fried Calbee snacks · inside Hakata Hankyu (grab on the Day 5 omiyage run)</div></div></div>
         <div class="late-card"><img src="https://images.unsplash.com/photo-1606471191009-63994c53433b?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="もち吉 / 作本海苔" onerror="this.style.display='none'"><div class="lc-body"><div class="lc-name">もち吉 / 作本海苔</div><div class="lc-desc" data-zh="米菓＋高級海苔 · 伴手禮 · 在博多／市場一帶順手買">Rice crackers + premium nori · omiyage · grab around Hakata / the market</div></div></div>
         <div class="late-card"><img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Matcha Cafe HACHI" onerror="this.style.display='none'"><div class="lc-body"><div class="lc-name">Matcha Cafe HACHI</div><div class="lc-desc" data-zh="抹茶甜點 · 在 JR 博多城內（11:00開）· 輕鬆休息／甜點站">Matcha desserts · inside JR Hakata City (opens 11:00) · rest / dessert stop</div></div></div>
-        <div class="late-card"><img src="https://images.unsplash.com/photo-1511882150382-421056c89033?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Bandai Namco 夾公仔" onerror="this.style.display='none'"><div class="lc-body"><div class="lc-name">Bandai Namco 夾公仔</div><div class="lc-desc" data-zh="夾娃娃機 · namco 博多巴士總站7樓（到24:00）— 見飯後卡片">Crane games · namco Hakata Bus Terminal 7F (till 24:00) — see the after-dinner cards</div></div></div>
+        <div class="late-card"><img src="https://images.unsplash.com/photo-1511882150382-421056c89033?w=500&q=80&auto=format&fit=crop" loading="lazy" alt="Bandai Namco Crane Games" onerror="this.style.display='none'"><div class="lc-body"><div class="lc-name">Bandai Namco Crane Games</div><div class="lc-desc" data-zh="夾娃娃機 · namco 博多巴士總站7樓（到24:00）— 見飯後卡片">Crane games · namco Hakata Bus Terminal 7F (till 24:00) — see the after-dinner cards</div></div></div>
       </div>
     </div>
   </details>
@@ -648,7 +648,7 @@ const YUFUIN_LUNCH = [
 ];
 
 const NIGHT_ACTIVITIES = [
-  { title:"⭐ Bandai Namco · 夾公仔 (crane games)", titleJp:"namco 博多バスターミナル店", addrJp:"福岡市博多区博多駅中央街2-1 博多バスターミナル7F", fromPrev:{icon:"🚶",text:"~3 min · Hakata Bus Terminal 7F · till 24:00"}, subtitle:"⭐ 100+ crane games · open till midnight · 3 min from Hakata Stn", kind:"Arcade · ⭐ Pick", rating:"3.2 · 1,284 reviews", priceHkd:"HKD ~10–55", priceJpy:"¥100–1,000", address:"Hakata Bus Terminal 7F · 2-1 Hakataeki-Chuogai", hours:"09:00–24:00 (VR to 23:30)", mapsUrl:"https://www.google.com/maps/search/?api=1&query=namco+博多バスターミナル店", photo:"https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&q=80&auto=format&fit=crop", note:"⭐ Your pick — 100+ crane games (UFO catchers), purikura + rhythm games on the 7th floor of Hakata Bus Terminal, 3 min from Hakata Station, open till midnight. Easy after-dinner fun for kids + adults.", tips:["100+ crane games · open till 24:00","3 min from Hakata Stn · Bus Terminal 7F"] },
+  { title:"⭐ Bandai Namco · Crane Games (UFO catchers)", titleJp:"namco 博多バスターミナル店", addrJp:"福岡市博多区博多駅中央街2-1 博多バスターミナル7F", fromPrev:{icon:"🚶",text:"~3 min · Hakata Bus Terminal 7F · till 24:00"}, subtitle:"⭐ 100+ crane games · open till midnight · 3 min from Hakata Stn", kind:"Arcade · ⭐ Pick", rating:"3.2 · 1,284 reviews", priceHkd:"HKD ~10–55", priceJpy:"¥100–1,000", address:"Hakata Bus Terminal 7F · 2-1 Hakataeki-Chuogai", hours:"09:00–24:00 (VR to 23:30)", mapsUrl:"https://www.google.com/maps/search/?api=1&query=namco+博多バスターミナル店", photo:"https://images.unsplash.com/photo-1511882150382-421056c89033?w=600&q=80&auto=format&fit=crop", note:"⭐ Your pick — 100+ crane games (UFO catchers), purikura + rhythm games on the 7th floor of Hakata Bus Terminal, 3 min from Hakata Station, open till midnight. Easy after-dinner fun for kids + adults.", tips:["100+ crane games · open till 24:00","3 min from Hakata Stn · Bus Terminal 7F"] },
   { title:"⭐ VR BASE TOKYO (Canal City)", titleJp:"VR BASE TOKYO 福岡店", addrJp:"福岡市博多区住吉1-2 キャナルシティ博多 センターウォーク4F", fromPrev:{icon:"🚇",text:"~12 min · Canal City 4F · till 21:00"}, subtitle:"⭐ VR / XR arcade · free-roam VR shooting · till 21:00", kind:"VR · ⭐ Pick", rating:"4.9 · 341 reviews", priceHkd:"HKD ~110–210", priceJpy:"¥2,000–4,000", address:"Canal City Hakata Center Walk 4F", hours:"10:00–21:00", mapsUrl:"https://www.google.com/maps/search/?api=1&query=VR+BASE+TOKYO+Canal+City", photo:"https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=600&q=80&auto=format&fit=crop", note:"⭐ Your pick — free-roam VR shooting + immersive XR at Canal City Hakata. Open till 21:00 (earlier-evening option). Best for older kids (9+) + adults.", tips:["Free-roam VR · age 9+","Canal City 4F · till 21:00"] },
   { title:"Don Quijote 中洲 + 天神 (24h)", titleJp:"ドン・キホーテ 中洲店 / 天神本店", addrJp:"中洲店: 博多区中洲3-7-24 / 天神本店: 中央区今泉1-20-17", fromPrev:{icon:"🛒",text:"~10 min · 中洲 (24h) · also 天神本店 (24h)"}, subtitle:"24h discount megastore · souvenirs / snacks / cosmetics", kind:"Shopping · 24h", rating:"4.0", priceHkd:"varies", priceJpy:"varies", hours:"24 hours", mapsUrl:"https://www.google.com/maps/search/?api=1&query=ドンキホーテ+中洲店", photo:"https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600&q=80&auto=format&fit=crop", note:"24-hour discount megastore — last-minute souvenirs, snacks, cosmetics, Kit Kat, mentaiko. 中洲 branch ~10 min from the hotel; 天神本店 handy after the Day-2 Wankarubi dinner.", tips:["Open 24 hours · tax-free counter","中洲 (10 min) + 天神 both 24h"] },
   { title:"Nakasu Yatai · 中洲屋台", titleJp:"中洲屋台", addrJp:"福岡市博多区中洲 (川沿い)", fromPrev:{icon:"🏮",text:"~14 min walk / 6 min taxi · riverside · 18:00–01:00"}, subtitle:"Riverside food stalls · the classic Hakata night · 18:00–01:00", kind:"Yatai · 屋台", rating:"4.3", priceHkd:"HKD ~130–150pp", priceJpy:"¥2,500–2,800pp", hours:"18:00–01:00", mapsUrl:"https://www.google.com/maps/search/?api=1&query=Nakasu+Yatai", photo:"https://images.unsplash.com/photo-1542010589005-d1eacc3918f2?w=600&q=80&auto=format&fit=crop", note:"The iconic Fukuoka night — ~20 open-air food stalls along the Naka River south side, 18:00–01:00. Yaki-ramen, oden, skewers. Go early-ish for the kid-friendly window.", tips:["Riverside stalls · cash preferred","Yaki-ramen is the signature"] },
@@ -708,7 +708,7 @@ const data = {
       addrJp: "〒812-0851 福岡県福岡市博多区大字青木739",
       photo: "https://upload.wikimedia.org/wikipedia/commons/1/12/Fukuoka_Airport_Domestic_Terminal.jpg",
       subtitle: "Everyone on XX123 from HKG (12:35 → 17:00) · regroup + subway to Hakata (博多駅)",
-      kind: "Arrival · 到着 · 抵達",
+      kind: "Arrival · 到着",
       address: "739 Aoki, Hakata Ward, Fukuoka 812-0851",
       mapsUrl: "https://www.google.com/maps/search/?api=1&query=Fukuoka+Airport+International+Terminal",
       website: "https://www.fukuoka-airport.jp/en/",
@@ -725,7 +725,7 @@ const data = {
       type: "transit", time: "17:30",
       travel: {
         icon: "🚇",
-      text: "FUK (福岡空港) → Hakata Stn (博多站) · ~10 min · Kuko (Airport) subway line · ¥260pp",
+      text: "FUK (福岡空港) → Hakata Stn (博多駅) · ~10 min · Kuko (Airport) subway line · ¥260pp",
       details: {
           description: "Fukuoka's airport subway is direct, frequent (every 5–8 min), and absurdly fast. Whole transfer including the inter-terminal shuttle is under 25 min from gate to hotel lobby. Strollers OK — every station has elevator access.",
       steps: [
@@ -738,7 +738,7 @@ const data = {
           mapsUrl: "https://www.google.com/maps/dir/Fukuoka+Airport+Station/Hakata+Station/data=!4m2!4m1!3e3"
         }
       },
-      title: "Subway to Hakata Stn (博多駅) · 福岡空港 → 博多",
+      title: "Subway to Hakata Stn (博多駅) · FUK → Hakata",
       titleJp: "博多駅",
       addrJp: "〒812-0012 福岡県福岡市博多区博多駅中央街1-1",
       photo: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80&auto=format&fit=crop",
@@ -770,12 +770,12 @@ const data = {
         ],
         mapsUrl: "https://www.google.com/maps/search/?api=1&query=Hakata+Station"
       }},
-      title: "Check-in · Sample Hotel Hakata · 入住",
+      title: "Check-in · Sample Hotel Hakata",
       titleJp: "サンプルホテル博多 チェックイン",
       addrJp: "福岡市博多区博多駅前（示範地址）",
       photo: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80&auto=format&fit=crop",
       subtitle: "Full-service hotel · 5★ · top-floor onsen · one family room · 5 nights (Jul 3 → 8)",
-      kind: "Lodging · 宿泊 · 入住",
+      kind: "Lodging · 宿泊",
       rating: "4.5",
       priceHkd: "Paid via reservation",
       priceJpy: "—",
@@ -1058,7 +1058,7 @@ const data = {
         text: "~5 min · cross Naka River (那珂川) to Canal City Hakata (キャナルシティ博多)",
         details: { description: "Canal City Hakata (キャナルシティ博多) is 5-min walk across the Naka River (那珂川) pedestrian bridge from Hakata Riverain. Famous fountain show + many restaurants." }
       },
-      title: "Lunch · Canal City Hakata (キャナルシティ博多) · 博多運河城",
+      title: "Lunch · Canal City Hakata (キャナルシティ博多)",
       titleJp: "キャナルシティ博多 ランチ",
       addrJp: "〒812-0018 福岡県福岡市博多区住吉1-2",
       subtitle: "Anpanman crew lunch · famous fountain show + family-friendly restaurants",
@@ -1274,7 +1274,7 @@ const data = {
     },
     {
       type: "service", time: "16:00",
-      title: "Rest at lodgings · 休憩",
+      title: "Rest at the hotel · 休憩",
       titleJp: "ホテルでゆっくり",
       addrJp: "サンプルホテル博多 · 博多駅前",
       photo: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80&auto=format&fit=crop",
@@ -1688,9 +1688,9 @@ const data = {
       type: "transit", time: "19:40",
       travel: {
         icon: "🚶",
-      text: "~5 min · Hakata Stn (博多駅) → each hotel · everyone tired, go straight to bed",
+      text: "~5 min · Hakata Stn (博多駅) → the hotel · everyone tired, go straight to bed",
       details: {
-          description: "Arrive Hakata 19:27. Walk back to each hotel. Skip late dinner — everyone is tired. Sleep recovery for Day 5."
+          description: "Arrive Hakata 19:27. Walk back to the hotel. Skip late dinner — everyone is tired. Sleep recovery for Day 5."
         }
       },
       title: "Back to Hakata · sleep",
@@ -2145,21 +2145,21 @@ const data = {
 // PHRASES
 // =================================================================
 const phrases = [
-  { jp: "すみません", romaji: "Sumimasen", tc: "唔該／不好意思（叫人或道歉）" },
-  { jp: "ありがとうございます", romaji: "Arigatou gozaimasu", tc: "多謝晒" },
-  { jp: "英語のメニューありますか？", romaji: "Eigo no menyuu arimasu ka?", tc: "有冇英文餐牌？" },
-  { jp: "これをください", romaji: "Kore wo kudasai", tc: "請畀我呢個" },
-  { jp: "子供用の椅子ありますか？", romaji: "Kodomo-you no isu arimasu ka?", tc: "有冇 BB 凳？" },
-  { jp: "辛くないでください", romaji: "Karaku nai de kudasai", tc: "唔該唔好辣" },
-  { jp: "アレルギーがあります", romaji: "Arerugii ga arimasu", tc: "我有過敏" },
-  { jp: "お会計お願いします", romaji: "O-kaikei onegaishimasu", tc: "唔該埋單" },
-  { jp: "クレジットカード使えますか？", romaji: "Kurejitto kaado tsukaemasu ka?", tc: "可唔可以碌卡？" },
-  { jp: "トイレはどこですか？", romaji: "Toire wa doko desu ka?", tc: "廁所喺邊？" },
-  { jp: "博多駅まで行ってください", romaji: "Hakata-eki made itte kudasai", tc: "唔該去博多站" },
-  { jp: "この住所に行きたいです", romaji: "Kono juusho ni ikitai desu", tc: "我想去呢個地址" },
-  { jp: "ベビーカーは大丈夫ですか？", romaji: "Bebii kaa wa daijoubu desu ka?", tc: "可唔可以推 BB 車入嚟？" },
-  { jp: "写真を撮ってもいいですか？", romaji: "Shashin wo totte mo ii desu ka?", tc: "可唔可以影相？" },
-  { jp: "助けてください", romaji: "Tasukete kudasai", tc: "唔該幫吓我" }
+  { jp: "すみません", en: "Excuse me / sorry", romaji: "Sumimasen", tc: "唔該／不好意思（叫人或道歉）" },
+  { jp: "ありがとうございます", en: "Thank you", romaji: "Arigatou gozaimasu", tc: "多謝晒" },
+  { jp: "英語のメニューありますか？", en: "Do you have an English menu?", romaji: "Eigo no menyuu arimasu ka?", tc: "有冇英文餐牌？" },
+  { jp: "これをください", en: "This one, please", romaji: "Kore wo kudasai", tc: "請畀我呢個" },
+  { jp: "子供用の椅子ありますか？", en: "Do you have a kids chair?", romaji: "Kodomo-you no isu arimasu ka?", tc: "有冇 BB 凳？" },
+  { jp: "辛くないでください", en: "Not spicy, please", romaji: "Karaku nai de kudasai", tc: "唔該唔好辣" },
+  { jp: "アレルギーがあります", en: "I have an allergy", romaji: "Arerugii ga arimasu", tc: "我有過敏" },
+  { jp: "お会計お願いします", en: "The bill, please", romaji: "O-kaikei onegaishimasu", tc: "唔該埋單" },
+  { jp: "クレジットカード使えますか？", en: "Do you take credit cards?", romaji: "Kurejitto kaado tsukaemasu ka?", tc: "可唔可以碌卡？" },
+  { jp: "トイレはどこですか？", en: "Where is the toilet?", romaji: "Toire wa doko desu ka?", tc: "廁所喺邊？" },
+  { jp: "博多駅まで行ってください", en: "To Hakata Station, please", romaji: "Hakata-eki made itte kudasai", tc: "唔該去博多站" },
+  { jp: "この住所に行きたいです", en: "I want to go to this address", romaji: "Kono juusho ni ikitai desu", tc: "我想去呢個地址" },
+  { jp: "ベビーカーは大丈夫ですか？", en: "Is a stroller OK?", romaji: "Bebii kaa wa daijoubu desu ka?", tc: "可唔可以推 BB 車入嚟？" },
+  { jp: "写真を撮ってもいいですか？", en: "May I take a photo?", romaji: "Shashin wo totte mo ii desu ka?", tc: "可唔可以影相？" },
+  { jp: "助けてください", en: "Please help me", romaji: "Tasukete kudasai", tc: "唔該幫吓我" }
 ];
 
 function renderPhrases() {
@@ -2168,7 +2168,7 @@ function renderPhrases() {
     <tr>
       <td class="jp">${p.jp}</td>
       <td class="romaji">${p.romaji}</td>
-      <td class="tc">${p.tc}</td>
+      <td class="tc">${(typeof LANG !== 'undefined' && LANG === 'zh') ? p.tc : p.en}</td>
       <td><button class="speak-mini" data-text="${escapeHtml(p.jp)}">🔊</button></td>
     </tr>
   `).join('');
@@ -2197,7 +2197,7 @@ function renderOptions(dayNum, eventIdx, options, parentTravel) {
     ? { icon: parentTravel.icon || '🚶', text: parentTravel.text }
     : null;
   return `
-    <div class="options-hint">${T('Swipe')} · ${options.length} ${T('options')} · 選一個</div>
+    <div class="options-hint">${T('Swipe')} · ${options.length} ${T('options')} · ${T('pick one')}</div>
     <div class="options-slider">
       ${options.map((o, oi) => {
         const firstChar = escapeHtml(pickGlyph(o.titleJp, o.title));
@@ -2379,7 +2379,7 @@ function openModal(dayNum, idx, optIdx) {
     const speakText = `${evt.titleJp || ''}。${evt.addrJp ? '住所は、' + evt.addrJp + '。' : ''}`;
     jpCollapseHTML = `
       <details class="modal-jp-collapse" open>
-        <summary>🇯🇵 Show to taxi / staff · 出示</summary>
+        <summary>🇯🇵 Show to taxi / staff</summary>
         <div class="jp-body">
           ${evt.titleJp ? `<strong>${escapeHtml(evt.titleJp)}</strong>` : ''}
           ${evt.addrJp ? `<span class="jp-addr">${escapeHtml(evt.addrJp)}</span>` : ''}
@@ -2514,6 +2514,7 @@ applyLang();
 
 
 window.ZH = {
+  "pick one": "選一個",
   "Tap for details · 詳細": "點擊看詳情 · 詳細",
   "Swipe": "滑動",
   "options": "個選擇",
@@ -2619,7 +2620,7 @@ window.ZH = {
   "Hakata shopping · JR Hakata City (JR博多シティ) + Pokemon Center": "博多購物 · JR博多City ＋ 寶可夢中心",
   "Subway to Anpanman · 中洲川端へ": "地下鐵前往麵包超人館 · 中洲川端",
   "Anpanman Children's Museum · アンパンマンこどもミュージアム": "麵包超人兒童博物館 · アンパンマンミュージアム",
-  "Lunch · Canal City Hakata (キャナルシティ博多) · 博多運河城": "午餐 · Canal City 博多運河城",
+  "Lunch · Canal City Hakata (キャナルシティ博多)": "午餐 · Canal City 博多運河城",
   "Hakata Stn (博多駅) afternoon · JR Hakata City (JR博多シティ) browse": "博多站下午 · JR博多City 逛逛",
   "Group Dinner · pick a spot · everyone reunite": "全體晚餐 · 選一間 · 全員重聚",
   "Yakiniku Nikuichi (肉一)": "燒肉 肉一",
@@ -3123,7 +3124,7 @@ window.ZH = {
   "Google Maps ↗": "Google 地圖 ↗",
   "Timetable ↗": "時刻表 ↗",
   "Buy Ticket ↗": "購票 ↗",
-  "FUK (福岡空港) → Hakata Stn (博多站) · ~10 min · Kuko (Airport) subway line · ¥260pp": "福岡空港 → 博多站 · 約10分鐘 · 空港線地下鐵 · 每人 ¥260",
+  "FUK (福岡空港) → Hakata Stn (博多駅) · ~10 min · Kuko (Airport) subway line · ¥260pp": "福岡空港 → 博多站 · 約10分鐘 · 空港線地下鐵 · 每人 ¥260",
   "Fukuoka's airport subway is direct, frequent (every 5–8 min), and absurdly fast. Whole transfer including the inter-terminal shuttle is under 25 min from gate to hotel lobby. Strollers OK — every station has elevator access.": "福岡的機場地下鐵直達、班次密（每5–8分鐘）、極快。含航廈間接駁，從登機口到酒店大堂不到25分鐘。可推嬰兒車 — 每站都有電梯。",
   "Exit International Terminal · follow signs 'Free Shuttle Bus to Domestic Terminal' (5 min)": "出國際線航廈 · 跟著『往國內線航廈免費接駁巴士』指標（5分鐘）",
   "At Domestic Terminal, descend to B2 · '福岡空港駅 Fukuoka Kuko (空港線) subway station'": "在國內線航廈下到 B2 · 『福岡空港駅』地下鐵站",
@@ -3235,8 +3236,8 @@ window.ZH = {
   "Yufuin → Hakata · ~2h 09min · Yufuin no Mori (green train) #6 · same reserved seats": "由布院 → 博多 · 約2小時09分 · 由布院之森（綠色列車）6號 · 同樣對號座",
   "Return on the same Yufuin no Mori (ゆふいんの森) train (different service #). Same seats reserved if booked round-trip together. Kids will likely sleep the whole way.": "搭同一班由布院之森列車回程（不同車次號）。來回一起訂的話座位相同。小孩大概一路都會睡。",
   "Yufuin no Mori (ゆふいんの森) #6: Yufuin 17:17 → Hakata 19:27": "由布院之森6號：由布院 17:17 → 博多 19:27",
-  "~5 min · Hakata Stn (博多駅) → each hotel · everyone tired, go straight to bed": "約5分鐘 · 博多站 → 各自酒店 · 大家都累了，直接休息",
-  "Arrive Hakata 19:27. Walk back to each hotel. Skip late dinner — everyone is tired. Sleep recovery for Day 5.": "19:27到博多。走回各自酒店。不吃宵夜 — 大家都累了。為第5天養足精神。",
+  "~5 min · Hakata Stn (博多駅) → the hotel · everyone tired, go straight to bed": "約5分鐘 · 博多站 → 各自酒店 · 大家都累了，直接休息",
+  "Arrive Hakata 19:27. Walk back to the hotel. Skip late dinner — everyone is tired. Sleep recovery for Day 5.": "19:27到博多。走回各自酒店。不吃宵夜 — 大家都累了。為第5天養足精神。",
   "Sample Hotel → Hakata Stn (博多駅) → FUK · ~25 min · ¥260pp · for 12:55 flight": "Sample Hotel → 博多站 → 福岡機場 · 約25分鐘 · 每人 ¥260 · 趕12:55 航班",
   "Group B subway to FUK for their 12:55 flight. Total ~25 min door to check-in (Sample Hotel 5 min → Hakata Stn (博多駅) → 10 min subway → 5 min shuttle).": "B組搭地下鐵去機場趕12:55航班。門到櫃台共約25分鐘（Sample Hotel 5分鐘 → 博多站 → 地下鐵10分鐘 → 接駁5分鐘）。",
   "Group B collect bags from Sample Hotel bell desk · 09:15": "B組09:15從 Sample Hotel 行李員處取行李",
@@ -3481,7 +3482,7 @@ window.ZH = {
   "Nightlife · 夜遊び": "夜間活動 · 夜遊び",
   "optional night out · all open late near the hotel · swipe": "任選的夜間活動 · 都在住處附近且營業很晚 · 滑動",
   "Optional — only if you've still got energy after dinner. Nearby spots that open late (many 24h / till midnight): ⭐ Bandai Namco crane games + VR first, then Don Quijote (24h), Nakasu yatai, arcades, 波葉の湯 onsen + sauna, late shopping. Same options every night — pick whatever you fancy, or just head to bed.": "任選 — 飯後還有精神才去。附近營業很晚的地方（多為24小時／到午夜）：⭐ Bandai Namco 夾娃娃＋VR 排前，再來唐吉訶德（24h）、中洲屋台、電玩、波葉之湯溫泉＋三溫暖、深夜購物。每晚都是同一份清單 — 想去哪就去哪，或直接去睡。",
-  "⭐ Bandai Namco · 夾公仔 (crane games)": "⭐ Bandai Namco · 夾公仔",
+  "⭐ Bandai Namco · Crane Games (UFO catchers)": "⭐ Bandai Namco · 夾公仔",
   "⭐ 100+ crane games · open till midnight · 3 min from Hakata Stn": "⭐ 100多台夾娃娃機 · 營業到午夜 · 距博多站3分鐘",
   "Arcade · ⭐ Pick": "電玩 · ⭐ 推薦",
   "~3 min · Hakata Bus Terminal 7F · till 24:00": "約3分鐘 · 博多巴士總站7樓 · 到24:00",
